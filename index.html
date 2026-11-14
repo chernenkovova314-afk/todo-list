@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Список завдань</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Шапка сторінки -->
+    <header>
+      <h1>Список завдань</h1>
+    </header>
+
+    <!-- Основний вміст: форма, лічильник, кнопка очищення і список -->
+    <main>
+      <form id="task-form">
+        <input type="text" id="task-input" placeholder="Нове завдання" required />
+        <select id="priority-select">
+          <option value="high">Високий</option>
+          <option value="medium" selected>Середній</option>
+          <option value="low">Низький</option>
+        </select>
+        <button type="submit">Додати</button>
+      </form>
+
+      <p id="counter"></p>
+      <button id="clear-done" type="button">Очистити виконані</button>
+      <ul id="task-list"></ul>
+    </main>
+
+    <!-- Скрипт підключаємо в кінці, щоб елементи сторінки вже існували -->
+    <script src="script.js"></script>
+  </body>
+</html>
